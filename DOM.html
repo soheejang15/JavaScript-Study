@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="DOM.css">
+</head>
+<body>
+    <div id="sidebar">
+        <div id="title">Possible</div>
+        <ul>
+            <li id="index-home" class="list-index">Home</li>
+            <li id="index-customers" class="list-index">Customers</li>
+            <li id="index-inbox" class="list-index">Inbox</li>
+            <li id="index-settings" class="list-index">Settings</li>
+        </ul>
+    </div>
+    <div class="content-container">
+        <p id="index-title">Inbox</p>
+        <div id="content">
+            <div id="lower-sidebar">
+                <div id="btn-container">
+                    <button id="compose-btn">Compose</button>
+                </div>
+                <div id="inbox-list">
+                    <ul>
+                        <li class="lower-index">Inbox</li>
+                        <li class="lower-index">Sent</li>
+                        <li class="lower-index">Drafts</li>
+                        <li class="lower-index">Trash</li>
+                        <li class="lower-index">Important</li>
+                        <li class="lower-index">Spam</li>
+                        <li class="lower-index">Starred</li>
+                    </ul>
+                </div>
+                <div id="tag-list">
+                    <ul>
+                        <li class="lower-index">Tag</li>
+                        <li class="lower-index">Sales</li>
+                        <li class="lower-index">Marketing</li>
+                        <li class="lower-index">Design</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="message-list-container">
+                <div id="search-container">
+                    <input id="message-search" type="text" name="search" placeholder="Search Message or Name">
+                </div>                
+                <div id="message-list">
+                    <div class="message-content">
+                        <span class="name">David James</span>
+                        <span class="date">Jan 5</span>
+                        <div class="text">Lorem ipsum dolor ...</div>
+                    </div>
+                    <div class="message-content">
+                        <span class="name">David James</span>
+                        <span class="date">Jan 5</span>
+                        <div class="text">Lorem ipsum dolor ...</div>
+                    </div>
+                </div>
+            </div>
+            <div id="selected-message">
+                <div id="user">
+                    <span id="name">David James</span>
+                    <span id="date">Jan 5, 2018</span>
+                    <div id="to">to <b>me</b></div> 
+                </div>
+                <div id="text">Hi David,<br><br><br>Iste minus et. Non necessitatibus ut est est id amet. Officiis sequi dolorum assumenda ipsam magnam cum possimus. Laudantium nulla amet tempore excepturi id expedita dolorum quisquam deserunt. Odit vel sint dolor eos. Ea blanditiis animi. Quibusdam unde unde. Perspiciatis vel pariatur qui. Deleniti omnis est quae. Laboriosam numquam amet aliquid.<br><br><br>
+                        Iste minus et. Non necessitatibus ut est est id amet. Officiis sequi dolorum assumenda ipsam magnam cum possimus. Laudantium nulla amet tempore excepturi id expedita dolorum quisquam deserunt. Odit vel sint dolor eos. Ea blanditiis animi. Quibusdam unde unde. Perspiciatis vel pariatur qui. Deleniti omnis est quae. Laboriosam numquam amet aliquid.Iste minus et. Non necessitatibus ut est est id amet. Officiis sequi dolorum<br><br><br> 
+                        Iste minus et. Non necessitatibus ut est est id amet. Officiis sequi dolorum assumenda ipsam magnam cum possimus. Laudantium nulla amet tempore excepturi id expedita dolorum </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

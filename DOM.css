@@ -1,0 +1,172 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+ul{
+    all: unset;
+    cursor: pointer;
+}
+
+button{
+    all: unset;
+    text-align: center;
+}
+
+input{
+    all: unset;
+}
+
+#sidebar{
+    display: inline-block;
+    flex: 1;
+    height: 100%;
+    background-color: #43425d;
+}
+
+#sidebar #title{
+    width: 90%;
+    height: 8%;
+    padding-left: 10%;
+    color: white;
+    font-size: 15px;
+    line-height: 66px;
+    font-weight: bold;
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#sidebar .list-index{
+    width: 100%;
+    height: 6%;
+    line-height: 50px;
+    color: white;
+    padding-left: 10%;
+}
+
+.content-container{
+    display: inline-block;
+    flex: 6;
+    height: 100%;
+    background-color: #f0f0f7;
+    padding: 0px 6%;
+}
+
+.content-container #index-title{
+    font-size: 28px;
+    color: #43425d;
+    text-align: left;
+    margin: 7% 0 3% 0;
+}
+
+.content-container #content{
+    width: 100%;
+    height: 75%;
+    background-color: white;
+    display: flex;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.04);
+}
+
+.content-container #content #lower-sidebar{
+    display: inline-block;
+    flex: 2;
+    border-right: solid #f0f0f7 2px;
+}
+
+#content #lower-sidebar li{
+    all: unset;
+    display: block;
+    margin: 10% 10%;
+}
+
+#content #lower-sidebar #btn-container{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid #f0f0f7 2px;
+}
+
+#content #lower-sidebar #inbox-list{
+    border-bottom: solid #f0f0f7 2px;
+}
+
+#content #lower-sidebar #btn-container #compose-btn{    
+    width: 80%;
+    height: 50%;
+    background-color: #3b86ff;
+    border-radius: 4px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.content-container #content #message-list-container{
+    display: inline-block;
+    flex: 3;
+    border-right: solid #f0f0f7 2px;
+}
+
+#message-list-container #search-container{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid #f0f0f7 2px;
+}
+
+#message-list-container #search-container #message-search{
+    width: 75%;
+    height: 40%;
+}
+
+#message-list-container #message-list .message-content{
+    border-bottom: solid #f0f0f7 2px;
+    padding: 5% 10%;
+}
+
+#message-list-container #message-list .message-content .name{
+    font-weight: bold;
+}
+
+#message-list-container #message-list .message-content .date{
+    float: right;
+    font-size: 12px;
+}
+
+#message-list-container #message-list .message-content .text{
+    font-size: 14px;
+}
+
+#content #selected-message{
+    display: inline-block;
+    flex: 7;
+}
+
+#content #selected-message #user{
+    border-bottom: solid #f0f0f7 2px;
+    padding: 5% 8%;
+}
+
+#content #selected-message #user #name{
+    font-weight: bold;
+}
+
+#content #selected-message #user #date{
+    font-size: 13px;
+    float: right;
+}
+
+#content #selected-message #user #to{
+    font-size: 13px;
+}
+
+#content #selected-message #text{
+    padding: 5%;
+    word-break: break-all;
+}
