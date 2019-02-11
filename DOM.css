@@ -42,11 +42,20 @@ input{
 }
 
 #sidebar .list-index{
-    width: 100%;
+    width: 90%;
     height: 6%;
     line-height: 50px;
     color: white;
     padding-left: 10%;
+}
+
+#sidebar .list-index-selected{
+    width: 90%;
+    height: 6%;
+    line-height: 50px;
+    color: white;
+    padding-left: 10%;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .content-container{
@@ -126,8 +135,18 @@ input{
 }
 
 #message-list-container #message-list .message-content{
+    all: unset;
+    display: block;
     border-bottom: solid #f0f0f7 2px;
     padding: 5% 10%;
+}
+
+#message-list-container #message-list .message-content-selected{
+    all: unset;
+    display: block;
+    border-bottom: solid #f0f0f7 2px;
+    padding: 5% 10%;
+    background-color: lightgrey;
 }
 
 #message-list-container #message-list .message-content .name{

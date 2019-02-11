@@ -10,7 +10,7 @@
 <body>
     <div id="sidebar">
         <div id="title">Possible</div>
-        <ul>
+        <ul class="sidebar-list">
             <li id="index-home" class="list-index">Home</li>
             <li id="index-customers" class="list-index">Customers</li>
             <li id="index-inbox" class="list-index">Inbox</li>
@@ -48,18 +48,18 @@
                 <div id="search-container">
                     <input id="message-search" type="text" name="search" placeholder="Search Message or Name">
                 </div>                
-                <div id="message-list">
-                    <div class="message-content">
+                <ul id="message-list">
+                    <li class="message-content">
                         <span class="name">David James</span>
                         <span class="date">Jan 5</span>
                         <div class="text">Lorem ipsum dolor ...</div>
-                    </div>
-                    <div class="message-content">
+                    </li>
+                    <li class="message-content">
                         <span class="name">David James</span>
                         <span class="date">Jan 5</span>
                         <div class="text">Lorem ipsum dolor ...</div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
             <div id="selected-message">
                 <div id="user">
@@ -73,5 +73,6 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="DOM.js"></script>
 </body>
 </html>
