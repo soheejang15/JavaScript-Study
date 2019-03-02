@@ -6,18 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="DOM.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
     <div id="sidebar">
         <div id="title">Possible</div>
         <ul class="sidebar-list">
-            <li id="index-home" class="list-index">Home</li>
-            <li id="index-customers" class="list-index">Customers</li>
-            <li id="index-inbox" class="list-index">Inbox</li>
-            <li id="index-settings" class="list-index">Settings</li>
+            <li id="index-home" class="list-index">
+                <div class="mark"></div>
+                <i class="fas fa-home"></i><p class="index-text">Home</p> 
+            </li>
+            <li id="index-customers" class="list-index">
+                <div class="mark"></div>
+                <i class="far fa-user"></i><p class="index-text">Customers</p> 
+            </li>
+            <li id="index-inbox" class="list-index">
+                <div class="mark"></div>
+                <i class="fas fa-envelope"></i><p class="index-text">Inbox</p>
+            </li>
+            <li id="index-settings" class="list-index">
+                <div class="mark"></div>
+                <i class="fas fa-cog"></i><p class="index-text">Settings</p>
+            </li>
         </ul>
     </div>
-    <div class="content-container">
+    <div id="content-container">
         <p id="index-title">Inbox</p>
         <div id="content">
             <div id="lower-sidebar">
@@ -36,11 +49,12 @@
                     </ul>
                 </div>
                 <div id="tag-list">
+                    <div class="title">Tag</div>
                     <ul>
-                        <li class="lower-index">Tag</li>
-                        <li class="lower-index">Sales</li>
-                        <li class="lower-index">Marketing</li>
-                        <li class="lower-index">Design</li>
+                        <li class="lower-index" id="sales"><i class="fas fa-circle"></i>Sales<p id="number-sales" class="number"></p></li>
+                        <li class="lower-index" id="marketing"><i class="fas fa-circle"></i>Marketing<p id="number-marketing" class="number"></p></li>
+                        <li class="lower-index" id="design"><i class="fas fa-circle"></i>Design<p id="number-design" class="number"></p></li>
+                        <li class="lower-index" id="frontend"><i class="fas fa-circle"></i>FrontEnd<p id="number-frontend" class="number"></p></li>
                     </ul>
                 </div>
             </div>
@@ -48,28 +62,19 @@
                 <div id="search-container">
                     <input id="message-search" type="text" name="search" placeholder="Search Message or Name">
                 </div>                
-                <ul id="message-list">
-                    <li class="message-content">
-                        <span class="name">David James</span>
-                        <span class="date">Jan 5</span>
-                        <div class="text">Lorem ipsum dolor ...</div>
-                    </li>
-                    <li class="message-content">
-                        <span class="name">David James</span>
-                        <span class="date">Jan 5</span>
-                        <div class="text">Lorem ipsum dolor ...</div>
-                    </li>
-                </ul>
+                <div id="message-list">
+                </div>
             </div>
             <div id="selected-message">
                 <div id="user">
-                    <span id="name">David James</span>
-                    <span id="date">Jan 5, 2018</span>
-                    <div id="to">to <b>me</b></div> 
+                    <div class="upper-box">
+                    </div>
+                    <div class="lower-box">
+                    </div>
+                     
                 </div>
-                <div id="text">Hi David,<br><br><br>Iste minus et. Non necessitatibus ut est est id amet. Officiis sequi dolorum assumenda ipsam magnam cum possimus. Laudantium nulla amet tempore excepturi id expedita dolorum quisquam deserunt. Odit vel sint dolor eos. Ea blanditiis animi. Quibusdam unde unde. Perspiciatis vel pariatur qui. Deleniti omnis est quae. Laboriosam numquam amet aliquid.<br><br><br>
-                        Iste minus et. Non necessitatibus ut est est id amet. Officiis sequi dolorum assumenda ipsam magnam cum possimus. Laudantium nulla amet tempore excepturi id expedita dolorum quisquam deserunt. Odit vel sint dolor eos. Ea blanditiis animi. Quibusdam unde unde. Perspiciatis vel pariatur qui. Deleniti omnis est quae. Laboriosam numquam amet aliquid.Iste minus et. Non necessitatibus ut est est id amet. Officiis sequi dolorum<br><br><br> 
-                        Iste minus et. Non necessitatibus ut est est id amet. Officiis sequi dolorum assumenda ipsam magnam cum possimus. Laudantium nulla amet tempore excepturi id expedita dolorum </div>
+                <div id="text"> <p id="content">
+                </p></div>
             </div>
         </div>
     </div>
